@@ -8,7 +8,7 @@ body {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 12%;
 }
 
 h1 {
@@ -65,11 +65,16 @@ p {
 .title-image {
   width: 60%;
   transform: rotate(20deg);
+  position: absolute;
+  right: 30%;
 }
 
 /* Features */
 #features {
-  padding: 5% 12%;
+  padding: 5% 13%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-box {
@@ -123,4 +128,42 @@ p {
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+/* Call to Action Section */
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+  padding: 5% 10% 2%;
+}
+
+.cta-text {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 4rem;
+  color: #fff;
+  padding: 0 10%;
+}
+
+/* Footer Section */
+#footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 5% 0 3%;
+}
+
+.footer-icon {
+    padding: .6rem;
+}
+
+/* Media Query Breakpoints */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
